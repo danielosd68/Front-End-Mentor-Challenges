@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fafafa;
+}
+
+body .main .headers {
+  text-align: center;
+}
+
+@media (max-width: 525px) {
+  body .main .headers {
+    font-size: 80%;
+  }
+}
+
+body .main .headers h1:nth-child(1) {
+  font-weight: 200;
+  margin-bottom: 0;
+  margin-top: 50px;
+}
+
+body .main .headers h1:nth-child(2) {
+  margin: 0;
+}
+
+body .main .headers p {
+  color: #a3a5ae;
+}
+
+@media (max-width: 525px) {
+  body .main .headers p {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+body .main .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 930px) {
+  body .main .container {
+    flex-direction: column;
+  }
+}
+
+body .main .container .box {
+  min-height: 600px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 930px) {
+  body .main .container .box {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 525px) {
+  body .main .container .box {
+    width: 350px;
+  }
+}
+
+body .main .container .box .content {
+  width: 90%;
+  height: 300px;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  color: #a3a5ae;
+  padding: 40px;
+  box-sizing: border-box;
+  -webkit-box-shadow: 2px 8px 22px -18px #54a3f3;
+  -moz-box-shadow: 2px 8px 22px -18px #54a3f3;
+  box-shadow: 2px 8px 22px -18px #54a3f3;
+}
+
+@media (max-width: 525px) {
+  body .main .container .box .content {
+    height: 280px;
+  }
+}
+
+body .main .container .box .content img {
+  display: block;
+  margin-left: auto;
+}
+
+body .main .container .box .content h2 {
+  color: #4c4e61;
+}
+
+body .main .container .box.left .supervisor {
+  border-top: 5px solid #45d3d3;
+}
+
+body .main .container .box.center .team-builder {
+  border-top: 5px solid #ea5353;
+}
+
+body .main .container .box.center .karma {
+  border-top: 5px solid #fcaf4a;
+}
+
+body .main .container .box.right .calculator {
+  border-top: 5px solid #549ef2;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}

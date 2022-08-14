@@ -1,0 +1,243 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #c7c7c7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Overpass', sans-serif;
+}
+
+html,
+body {
+  background-color: #674baf;
+  background-image: url("images/bg-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 45%;
+  background-attachment: fixed;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 1280px) {
+  html,
+  body {
+    background-image: url("images/bg-desktop.svg");
+    background-color: #674baf;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  html content,
+  body content {
+    width: 90vw;
+  }
+}
+
+html content .logo,
+body content .logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 10%;
+}
+
+html content .logo img,
+body content .logo img {
+  width: 45%;
+  height: auto;
+}
+
+@media only screen and (min-width: 980px) {
+  html content .logo img,
+  body content .logo img {
+    width: 40vw;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  html content .logo img,
+  body content .logo img {
+    width: 20vw;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  html content main,
+  body content main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+  }
+}
+
+@media only screen and (min-width: 980px) {
+  html content main .main-section,
+  body content main .main-section {
+    width: 80vw;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  html content main .main-section,
+  body content main .main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+
+html content main .main-section .box,
+body content main .main-section .box {
+  display: flex;
+  justify-content: center;
+}
+
+html content main .main-section .box img,
+body content main .main-section .box img {
+  width: 90%;
+  height: auto;
+  margin-top: 5vh;
+}
+
+@media only screen and (min-width: 980px) {
+  html content main .main-section .box img,
+  body content main .main-section .box img {
+    width: 70vw;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  html content main .main-section .box img,
+  body content main .main-section .box img {
+    width: 50vw;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  html content main .main-section .box img,
+  body content main .main-section .box img {
+    width: 40vw;
+  }
+}
+
+html content main .main-section .box .button,
+body content main .main-section .box .button {
+  margin-top: 2vh;
+}
+
+html content main .main-section .box .button button:hover,
+body content main .main-section .box .button button:hover {
+  background-color: #e882e8;
+  color: white;
+}
+
+html content main .main-section .box .button button,
+body content main .main-section .box .button button {
+  width: 60%;
+  padding: 1.5vh;
+  background-color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 80%;
+  color: #674baf;
+  box-shadow: 3px 5px 33px -14px #42445a;
+  transition: 0.2s;
+}
+
+@media only screen and (min-width: 1920px) {
+  html content main .main-section .box .button button,
+  body content main .main-section .box .button button {
+    width: 40%;
+  }
+}
+
+html content main .main-section .second,
+body content main .main-section .second {
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 3.5vh;
+}
+
+@media only screen and (min-width: 1280px) {
+  html content main .main-section .second,
+  body content main .main-section .second {
+    margin-left: 2vw;
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  html content main .main-section .second,
+  body content main .main-section .second {
+    width: 30vw;
+  }
+}
+
+html content main .main-section .second .title h1,
+body content main .main-section .second .title h1 {
+  font-size: 200%;
+  margin-bottom: 1vh;
+  margin-top: 0;
+}
+
+html content main .main-section .second .description,
+body content main .main-section .second .description {
+  margin-top: 0;
+  opacity: 0.8;
+}
+
+html content .footer,
+body content .footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 3vh;
+}
+
+@media only screen and (min-width: 1280px) {
+  html content .footer,
+  body content .footer {
+    justify-content: right;
+  }
+}
+
+html content .footer .element,
+body content .footer .element {
+  width: 20px;
+  height: 20px;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  border: 1px solid white;
+  border-radius: 100%;
+  padding: 1vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 1280px) {
+  html content .footer .element,
+  body content .footer .element {
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+  }
+}

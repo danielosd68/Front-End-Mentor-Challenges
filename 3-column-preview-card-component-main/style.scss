@@ -1,0 +1,184 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+$brightOrange: hsl(31, 77%, 52%);
+$darkCyan: hsl(184, 100%, 22%);
+$veryDarkCyan: hsl(179, 100%, 13%);
+
+$fontSize: 15px;
+
+//Natural colors
+$transparentWhiteParagraphs: hsla(0, 0%, 100%, 0.75);
+$veryLightGrey: hsl(0, 0%, 95%);
+
+html,
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100%;
+    background-color: $veryLightGrey;
+
+
+    main {
+        width: 90vw;
+        border-radius: 20px;
+        color: white;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+
+        @media only screen and (min-width:750px) {
+            width: 75vw;
+        }
+
+        @media only screen and (min-width:980px) {
+            width: 55vw;
+        }
+
+        @media only screen and (min-width:1280px) {
+            width: 90vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section {
+            padding-left: 15vw;
+            padding-right: 15vw;
+            padding-top: 5vh;
+            padding-bottom: 5vh;
+
+
+
+            @media only screen and (min-width:980px) {
+                padding-left: 10vw;
+                padding-right: 10vw;
+            }
+
+            @media only screen and (min-width:1280px) {
+                width: 20vw;
+                padding-left: 5vw;
+                padding-right: 5vw;
+                height: 50vh;
+                display: flex;
+                justify-content: center;
+                align-items: stretch;
+                flex-direction: column;
+
+                img {
+                    width: 5vw;
+                }
+            }
+
+            @media only screen and (min-width:1440px) {
+                height: 45vh;
+            }
+
+            @media only screen and (min-width:1920px) {
+                height: 55vh;
+                width: 15vw;
+            }
+
+            p {
+                color: $veryLightGrey;
+                font-size: 0.9em;
+            }
+
+            button {
+                width: 40vw;
+                padding: 3vw 3vh 3vw 3vh;
+                border-radius: 25px;
+                border: none;
+                background-color: white;
+                font-size: 1em;
+                cursor: pointer;
+
+                @media only screen and (min-width:750px) {
+                    width: 25vw;
+                    padding: 3vw 1vh 3vw 1vh;
+                }
+
+                @media only screen and (min-width:980px) {
+                    width: 20vw;
+                    padding: 5%;
+                }
+
+                @media only screen and (min-width:1280px) {
+                    width: 13vw;
+                    padding: 5%;
+                }
+
+                @media only screen and (min-width:1920px) {
+                    width: 10vw;
+                }
+            }
+        }
+
+        .sedans {
+            background-color: $brightOrange;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+
+            @media only screen and (min-width:1280px) {
+                border-top-right-radius: 0;
+                border-bottom-left-radius: 20px;
+            }
+
+            button:hover {
+                border: 1.5px solid white;
+                background-color: $brightOrange;
+                color: white;
+            }
+
+            button {
+                color: $brightOrange;
+                transition: all 0.2s ease-in-out;
+            }
+        }
+
+        .suvs {
+            background-color: $darkCyan;
+
+            button:hover {
+                border: 1.5px solid white;
+                background-color: $darkCyan;
+                color: white;
+            }
+
+            button {
+                color: $darkCyan;
+                transition: all 0.2s ease-in-out;
+            }
+        }
+
+        .luxury {
+            background-color: $veryDarkCyan;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+
+            @media only screen and (min-width:1280px) {
+                border-bottom-left-radius: 0;
+                border-top-right-radius: 20px;
+            }
+
+            button:hover {
+                border: 1.5px solid white;
+                background-color: $veryDarkCyan;
+                color: white;
+            }
+
+            button {
+                color: $veryDarkCyan;
+                transition: all 0.2s ease-in-out;
+            }
+        }
+    }
+}
