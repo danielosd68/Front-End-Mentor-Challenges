@@ -1,0 +1,176 @@
+$darkCyan: hsl(158, 36%, 37%);
+$cream: hsl(30, 38%, 92%);
+$veryDarkBlue: hsl(212, 21%, 14%);
+$darkGrayishBlue: hsl(228, 12%, 48%);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+$defaultFont: Montserrat;
+$buttonFont: Fraunces;
+
+html {
+    body {
+        color: black;
+        margin: 0;
+        font-family: $defaultFont;
+        background-color: $cream;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-height: 100vh;
+
+        .content {
+            width: 700px;
+            min-height: 500px;
+            background-color: white;
+            border-radius: 20px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @media (max-width: 750px) {
+                min-height: auto;
+                margin-left: 20px;
+                margin-right: 20px;
+                flex-direction: column;
+                width: 400px;
+            }
+
+            @media (max-width: 450px) {
+                width: 320px;
+            }
+
+
+            .section {
+                width: 50%;
+                min-height: 500px;
+
+                @media (max-width: 750px) {
+
+                    width: 100%;
+
+                }
+
+                @media (max-width: 750px) {
+                    min-height: auto;
+                }
+            }
+
+            .section.first {
+
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px;
+                background-image: url('images/image-product-desktop.jpg');
+                background-size: 100% 110%;
+
+                @media (max-width: 750px) {
+                    height: 250px;
+                    border-top-left-radius: 20px;
+                    border-bottom-left-radius: 0;
+                    border-top-right-radius: 20px;
+                    background-image: url('images/image-product-mobile.jpg');
+                    background-size: 100% 100%;
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-top-left-radius: 20px;
+                    border-bottom-left-radius: 20px;
+
+                    @media (max-width: 575px) {
+                        border-top-left-radius: 20px;
+                        border-bottom-left-radius: 0;
+                        border-top-right-radius: 20px;
+                    }
+
+
+                }
+
+            }
+
+            .section.second {
+
+                @media (max-width: 750px) {
+                    height: auto;
+                }
+
+                .element {
+                    width: 80%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }
+
+                .element.header-sm {
+                    color: $darkGrayishBlue;
+                    letter-spacing: 4px;
+                }
+
+                .element.title {
+                    font-weight: 700;
+                    font-family: $buttonFont;
+                }
+
+                .element.description {
+                    color: $darkGrayishBlue;
+                }
+
+                .element.price {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .price {
+
+                        width: 50%;
+
+                    }
+
+                    .price.currently {
+                        font-family: $buttonFont;
+                        font-weight: 700;
+                        font-size: 35px;
+                        color: $darkCyan;
+
+                        @media (max-width: 992px) {
+                            font-size: 30px;
+                        }
+
+                        @media (max-width: 684px) {
+                            font-size: 25px;
+                        }
+                    }
+
+                    .price.before {
+                        color: $darkGrayishBlue;
+                        text-decoration: line-through;
+                    }
+                }
+
+                .element.button {
+                    display: flex;
+                    justify-content: center;
+
+                    button {
+                        width: 100%;
+                        border-radius: 10px;
+                        height: 50px;
+                        border: none;
+                        background-color: $darkCyan;
+                        color: white;
+                        transition: all 0.2s ease-in-out;
+
+                    }
+
+                    button:hover {
+                        background-color: hsl(158, 37%, 20%);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,79 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+html {
+  height: 100%;
+}
+
+html body {
+  background-color: #d6e2f0;
+  height: 100%;
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+}
+
+html body .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+html body .container .content {
+  width: 450px;
+  height: auto;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 2px 0px 50px #7b879d;
+  margin-bottom: 2%;
+}
+
+html body .container .content .image {
+  width: 80%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 15px 15px 15px;
+}
+
+html body .container .content .image img {
+  width: 100%;
+  height: auto;
+  border-radius: 45px;
+}
+
+html body .container .content .text {
+  padding: 10%;
+  height: 50%;
+}
+
+html body .container .content .text h1 {
+  text-align: center;
+  font-weight: 700;
+}
+
+html body .container .content .text p {
+  text-align: center;
+  font-size: 110%;
+  color: #7b879d;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 900px) {
+  html body .container .content {
+    width: 375px;
+  }
+}

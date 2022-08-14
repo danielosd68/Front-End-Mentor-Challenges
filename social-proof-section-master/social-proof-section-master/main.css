@@ -1,0 +1,244 @@
+html body {
+  margin: 0;
+  font-family: 'League Spartan', sans-serif;
+  background: url("images/bg-pattern-top-desktop.svg"), url("images/bg-pattern-bottom-desktop.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: top left, bottom right;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+@media only screen and (max-width: 1220px) {
+  html body {
+    background: url("images/bg-pattern-top-mobile.svg"), url("images/bg-pattern-bottom-mobile.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom right;
+    background-attachment: fixed;
+  }
+}
+
+html body main {
+  min-height: 90vh;
+}
+
+html body main .element {
+  min-height: 40vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 1220px) {
+  html body main .element {
+    flex-direction: column;
+  }
+}
+
+html body main .element .left {
+  width: 30vw;
+  margin-top: 25px;
+}
+
+@media only screen and (max-width: 1220px) {
+  html body main .element .left {
+    width: auto;
+  }
+}
+
+html body main .element .left .title {
+  color: #502050;
+  font-size: 300%;
+  opacity: 0;
+}
+
+html body main .element .left .description {
+  color: #937b92;
+  font-size: 120%;
+  word-spacing: 2px;
+  line-height: 30px;
+}
+
+html body main .element .right {
+  width: 30vw;
+  margin-top: 25px;
+}
+
+@media only screen and (max-width: 1220px) {
+  html body main .element .right {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+html body main .element .right .rate-container {
+  width: 30vw;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1220px) {
+  html body main .element .right .rate-container {
+    width: 80vw;
+  }
+}
+
+html body main .element .right .rate-container .rate-content {
+  width: 450px;
+  background-color: #f7f2f7;
+  min-height: 70px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border-radius: 15px;
+  transform: translateX(1000px);
+}
+
+@media only screen and (max-width: 1220px) {
+  html body main .element .right .rate-container .rate-content {
+    justify-content: flex-start;
+  }
+}
+
+html body main .element .right .rate-container .rate-content .stars {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+html body main .element .right .rate-container .rate-content .stars img {
+  margin: 5%;
+}
+
+html body main .element .right .rate-container .rate-content .opinion {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  font-size: 120%;
+  color: #502050;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 1220px) {
+  html body main .element .right .rate-container.top,
+  html body main .element .right .rate-container.center,
+  html body main .element .right .rate-container.bottom {
+    justify-content: flex-start;
+  }
+}
+
+html body main .element .right .rate-container.top {
+  justify-content: left;
+}
+
+html body main .element .right .rate-container.center {
+  justify-content: center;
+}
+
+html body main .element .right .rate-container.bottom {
+  justify-content: right;
+}
+
+html body main .element.bottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1220px) {
+  html body main .element.bottom {
+    flex-direction: column;
+  }
+}
+
+html body main .element.bottom .opinion-container {
+  width: 25vw;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  transform: translateX(3000px);
+}
+
+@media only screen and (max-width: 1220px) {
+  html body main .element.bottom .opinion-container {
+    width: 80vw;
+    align-items: center;
+  }
+}
+
+html body main .element.bottom .opinion-container .opinion-content {
+  width: 20vw;
+  height: 250px;
+  background-color: #502050;
+  border-radius: 15px;
+}
+
+@media only screen and (max-width: 1220px) {
+  html body main .element.bottom .opinion-container .opinion-content {
+    width: 80%;
+  }
+}
+
+html body main .element.bottom .opinion-container .opinion-content .opinion-content-top {
+  display: flex;
+  align-items: center;
+}
+
+html body main .element.bottom .opinion-container .opinion-content .opinion-content-top .opinion-content-top-image {
+  margin: 20px;
+}
+
+html body main .element.bottom .opinion-container .opinion-content .opinion-content-top .opinion-content-top-image img {
+  border-radius: 100%;
+}
+
+html body main .element.bottom .opinion-container .opinion-content .opinion-content-top .opinion-content-top-name {
+  color: white;
+}
+
+html body main .element.bottom .opinion-container .opinion-content .opinion-content-top .opinion-content-top-name .bottom {
+  color: #ee68a4;
+}
+
+html body main .element.bottom .opinion-container .opinion-content .opinion-content-bottom {
+  margin-left: 20px;
+  margin-right: 20px;
+  color: white;
+}
+
+html body main .element.bottom .left,
+html body main .element.bottom .right {
+  margin: 0;
+}
+
+html body main .element.bottom .opinion-container.left {
+  align-items: top;
+}
+
+html body main .element.bottom .opinion-container.center {
+  align-items: center;
+}
+
+html body main .element.bottom .opinion-container.right {
+  align-items: flex-end;
+}
+
+@media only screen and (max-width: 1220px) {
+  html body main .element.bottom .opinion-container.right {
+    align-items: center;
+  }
+}
+
+html body footer {
+  min-height: 3vh;
+  text-align: center;
+}
