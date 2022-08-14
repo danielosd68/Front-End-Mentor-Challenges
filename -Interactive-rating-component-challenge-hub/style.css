@@ -1,0 +1,131 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Overpass', sans-serif;
+  background-color: #121417;
+  color: white;
+  height: 100vh;
+}
+
+html main,
+body main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+html main #container,
+body main #container {
+  width: 500px;
+  height: 500px;
+  background-color: #252d37;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  background-color: #252d37;
+  background-image: linear-gradient(180deg, #252d37 0%, #07080e 100%);
+}
+
+html main #container .content,
+body main #container .content {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+}
+
+html main #container .content p,
+body main #container .content p {
+  color: #7c8798;
+}
+
+html main #container .content .gradeViewer,
+body main #container .content .gradeViewer {
+  width: 70%;
+  background-color: #434851;
+  height: 40px;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  color: #fb7413;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+html main #container .content .star,
+body main #container .content .star {
+  width: 50px;
+  height: 50px;
+  background-color: #434851;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+html main #container .content .circles,
+body main #container .content .circles {
+  display: flex;
+  justify-content: center;
+  align-items: space-between;
+  flex-direction: row;
+  margin-top: 3vh;
+}
+
+html main #container .content .circles .circle:hover,
+body main #container .content .circles .circle:hover {
+  background-color: #959eac;
+}
+
+html main #container .content .circles .circle,
+body main #container .content .circles .circle {
+  width: 50px;
+  height: 50px;
+  background-color: #434851;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
+  user-select: none;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+html main #container .content .submit:hover,
+body main #container .content .submit:hover {
+  background-color: white;
+  color: #fb7413;
+}
+
+html main #container .content .submit,
+body main #container .content .submit {
+  width: 100%;
+  background-color: #fb7413;
+  height: 50px;
+  border-radius: 35px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+  user-select: none;
+  cursor: pointer;
+  transition: 0.2s;
+}

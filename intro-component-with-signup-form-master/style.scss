@@ -1,0 +1,220 @@
+//Colors
+$red: hsl(0, 100%, 74%);
+$green: hsl(154, 59%, 51%);
+$blue: hsl(248, 32%, 49%);
+
+$darkBlue: hsl(249, 10%, 26%);
+$grayishBlue: hsl(246, 25%, 77%);
+$defaultFontSize: 16px;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+body {
+    margin: 0;
+    font-size: $defaultFontSize;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('./images/bg-intro-mobile.png');
+    background-color: $red;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    main {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        @media (min-width:1000px) {
+            flex-direction: row;
+        }
+
+        .left {
+            width: 100%;
+
+            @media (min-width:1000px) {
+                width: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                padding-left: 100px;
+                box-sizing: border-box;
+
+
+
+            }
+
+            @media (min-width:1600px) {
+                padding-left: 200px;
+            }
+        }
+
+        .right {
+            width: 100%;
+        }
+
+
+        .header {
+            width: 100%;
+            text-align: center;
+
+            @media (min-width:1000px) {
+                text-align: left;
+                font-size: 2em;
+
+            }
+        }
+
+        .description {
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+
+            @media (min-width:1000px) {
+                text-align: left;
+                margin-top: 0;
+
+            }
+
+            p {
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+
+        .blue-box {
+            width: 85%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            background-color: $blue;
+            padding: 20px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            -webkit-box-shadow: 0px 7px 0px -1px rgba(66, 68, 90, 0.4);
+            -moz-box-shadow: 0px 7px 0px -1px rgba(66, 68, 90, 0.4);
+            box-shadow: 0px 7px 0px -1px rgba(66, 68, 90, 0.4);
+
+            span:nth-child(1) {
+                font-weight: 500;
+            }
+
+            @media (min-width:1000px) {
+                width: 470px;
+            }
+
+            @media (min-width:1600px) {
+                width: 600px;
+            }
+        }
+
+        .form {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            background-color: white;
+            width: 85%;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px;
+            -webkit-box-shadow: 0px 7px 0px -1px rgba(66, 68, 90, 0.7);
+            -moz-box-shadow: 0px 7px 0px -1px rgba(66, 68, 90, 0.7);
+            box-shadow: 0px 7px 0px -1px rgba(66, 68, 90, 0.7);
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+            @media (min-width:1000px) {
+                width: 470px;
+            }
+
+            @media (min-width:1600px) {
+                width: 600px;
+            }
+
+            form {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                box-sizing: border-box;
+
+                @media (min-width:1600px) {
+                    margin-top: 20px;
+                }
+
+                input {
+                    width: 90%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    padding: 15px;
+                    box-sizing: border-box;
+                    margin: 10px auto;
+                    border-radius: 5px;
+                    border: none;
+                    border: 1px solid $grayishBlue;
+                    font-weight: bolder;
+                }
+
+
+
+                .error-img {
+                    background-image: url('./images/icon-error.svg');
+                    background-repeat: no-repeat;
+                    background-position: 97% center;
+                }
+
+                input:focus {
+                    outline: none;
+                }
+
+                P {
+                    color: $grayishBlue;
+                    font-size: 0.7em;
+                    text-align: center;
+                    margin-left: 35px;
+                    margin-right: 35px;
+
+                    span {
+                        a {
+                            color: $red;
+                            font-weight: 500;
+                            text-decoration: none;
+                        }
+                    }
+                }
+
+                .error-info {
+                    display: none;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    color: $red;
+                    text-align: right;
+                }
+
+                .error-info.show {
+                    display: block;
+                }
+
+                button {
+                    width: 90%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    border: none;
+                    border-radius: 5px;
+                    box-sizing: border-box;
+                    padding: 20px;
+                    font-size: 1.1em;
+                    background-color: $green;
+                    color: white;
+                    cursor: pointer;
+                    border-bottom: 5px solid hsl(154, 57%, 42%);
+                }
+
+                button:hover {
+                    background-color: rgb(59, 216, 174);
+                }
+            }
+        }
+    }
+}

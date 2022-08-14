@@ -1,0 +1,157 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+//circle color
+
+$circleColor: #434851;
+//
+
+
+
+$orange: hsl(25, 97%, 53%);
+
+$white: hsl(0, 0%, 100%);
+$lightGrey: hsl(217, 12%, 63%);
+$mediumGrey: hsl(216, 12%, 54%);
+$darkBlue: hsl(213, 19%, 18%);
+$veryDarkBlue: hsl(216, 12%, 8%);
+
+$fontSize: 15px;
+
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Overpass', sans-serif;
+    background-color: $veryDarkBlue;
+    color: $white;
+    height: 100vh;
+
+
+
+    main {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        #container {
+            width: 500px;
+            height: 500px;
+            background-color: $darkBlue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 30px;
+            background-color: rgba(37, 45, 55, 1);
+            background-image: linear-gradient(180deg, rgba(37, 45, 55, 1) 0%, rgba(7, 8, 14, 1) 100%);
+
+
+            .content {
+
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+
+                margin-top: 10%;
+
+
+
+                p {
+                    color: $mediumGrey;
+                }
+
+
+                .gradeViewer {
+                    width: 70%;
+                    background-color: $circleColor;
+                    height: 40px;
+                    border-radius: 20px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 2vh;
+                    margin-bottom: 2vh;
+                    color: $orange;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                }
+
+                .star {
+                    width: 50px;
+                    height: 50px;
+                    background-color: $circleColor;
+                    border-radius: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .circles {
+                    display: flex;
+                    justify-content: center;
+                    align-items: space-between;
+                    flex-direction: row;
+                    margin-top: 3vh;
+
+                    .circle:hover {
+                        background-color: $lightGrey;
+                    }
+
+                    .circle {
+                        width: 50px;
+                        height: 50px;
+                        background-color: $circleColor;
+                        border-radius: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-left: 0.5vw;
+                        margin-right: 0.5vw;
+                        user-select: none;
+                        transition: 0.2s;
+                        cursor: pointer
+                    }
+                }
+
+                .submit:hover {
+                    background-color: $white;
+                    color: $orange;
+                }
+
+                .submit {
+                    width: 100%;
+                    background-color: $orange;
+                    height: 50px;
+                    border-radius: 35px;
+                    font-size: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 5vh;
+                    user-select: none;
+                    cursor: pointer;
+                    transition: 0.2s;
+                }
+
+
+
+            }
+
+
+
+
+        }
+    }
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+    <div class="left">
+      <div class="header">
+        <h1>Learn to code by<br>watching others</h1>
+      </div>
+
+      <div class="description">
+        <p>
+          See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+          but understanding how developers think is invaluable.
+        </p>
+      </div>
+    </div>
+    <div class="right">
+      <div class="blue-box">
+
+        <span>Try it free 7 days then</span>
+        <span>$20/mo. thereafter</span>
+      </div>
+
+      <div class="form">
+        <form action="#">
+          <input id="name" type="text" name="name" placeholder="First name">
+          <p class="error-info name">First name cannot be empty!</p>
+          <input id="surname" type="text" name="surname" placeholder="Last name">
+          <p class="error-info surname">Last name cannot be empty!</p>
+          <input id="email" type="email" name="email" placeholder="Email address">
+          <p class="error-info email">Look like this is a not an email!</p>
+          <input id="password" type="password" name="pass" placeholder="Password">
+          <p class="error-info password">Password cannot be empty!</p>
+          <button class="btn">CLAIM YOUR FREE TRIAL</button>
+          <p> By clicking the button, you are agreeing to our <span><a href="#">Terms and Services</a></span></p>
+        </form>
+      </div>
+    </div>
+
+
+
+
+
+  </main>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/danielosd68">Daniel Chyliński</a>.
+    </p>
+  </footer>
+  <script>
+
+    //Animation
+    const btn = document.querySelector('.btn');
+
+
+
+    btn.addEventListener('click', (e) => {
+
+      btn.style.transform = 'translateY(5px)';
+      btn.style.borderBottom = "0px";
+      btn.style.transition = "all 0.3s ease-in-out";
+
+      setTimeout(() => {
+        btn.removeAttribute('style');
+      }, 500);
+
+      e.preventDefault();
+
+      const data = {
+        name: document.querySelector('#name').value,
+        surname: document.querySelector('#surname').value,
+        email: document.querySelector('#email').value,
+        password: document.querySelector('#password').value,
+      }
+
+      //validate
+
+      const { name, surname, email, password } = data;
+      const nameInput = document.querySelector('#name');
+      const surnameInput = document.querySelector('#surname');
+      const emailInput = document.querySelector('#email');
+      const passwordInput = document.querySelector('#password');
+
+      const setError = (input, className) => {
+        input.style.border = "1px solid hsl(0, 100%, 74%)";
+        input.style.color = "hsl(0,100%, 74%";
+        input.classList.add('error-img');
+        document.querySelector(`.error-info.${className}`).classList.add('show');
+      }
+
+      const removeError = (input, className) => {
+        input.removeAttribute('style');
+        input.classList.remove('error-img')
+        document.querySelector(`.error-info.${className}`).classList.remove('show');
+      }
+
+      let error = false;
+      const emailRegex = /^[a-z\d]+[\w\d.-]*@(?:[a-z\d]+[a-z\d-]+\.){1,5}[a-z]{2,6}$/i;
+
+      if (name.length < 1) {
+        error = true;
+        setError(nameInput, "name");
+
+      }
+
+      else {
+        error = false;
+        removeError(nameInput, "name");
+
+      }
+
+      if (surname.length < 1) {
+        error = true;
+        setError(surnameInput, "surname");
+      }
+
+      else {
+        error = false;
+        removeError(surnameInput, "surname");
+      }
+
+      if (email.length < 1 || emailRegex.test(email) === false) {
+        error = true;
+        setError(emailInput, "email");
+        emailInput.setAttribute('placeholder', 'email@example/com')
+      }
+      else {
+        error = false;
+        removeError(emailInput, "email");
+      }
+
+      if (password.length < 1) {
+        error = true;
+        setError(passwordInput, "password");
+      }
+
+      else {
+        error = false;
+        removeError(passwordInput, "password");
+      }
+
+
+      if (error == false) {
+        console.warn('Wysyłanie danych');
+      }
+
+
+
+
+    });
+
+
+  </script>
+</body>
+
+</html>
