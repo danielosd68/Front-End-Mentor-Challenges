@@ -1,0 +1,98 @@
+@font-face {
+    src: url("assets/fonts/Figtree-VariableFont_wght.ttf");
+    font-family: Figtree;
+}
+
+
+body{
+    background: #F5D04E;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Figtree, serif;
+}
+
+.container{
+    width: 450px;
+    height: 600px;
+    background: white;
+    border: 2px solid black;
+    padding: 25px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    box-shadow: 8px 8px 0px -1px rgb(0, 0, 0);
+}
+
+.container img{
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.learning{
+    width: 100px;
+    height: 30px;
+    background: #F5CE4D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 12px;
+}
+
+.date{
+    margin-bottom: 15px;
+}
+
+.title{
+    font-size: 32px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.content{
+    color: rgba(0, 0, 0, 0.45);
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+    font-weight: bolder;
+}
+
+.footer img{
+    width: 40px;
+    height: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 10px;
+}
+
+@media(max-width: 490px){
+    .container{
+        width: 300px;
+        height: 450px;
+    }
+
+    .title{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .content{
+        font-size: 16px;
+    }
+
+    .footer{
+        margin-top: 10px;
+    }
+}
